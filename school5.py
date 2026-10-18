@@ -24,13 +24,11 @@ from telegram.ext import (
 load_dotenv()
 
 # Получаем токен бота из переменной окружения
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv("8931178360:AAFulAdB3WS5lgO8i4_-SZoLbtfmTfURsGQ")
 
 # Проверяем, указан ли токен
-if not TOKEN:
-    raise RuntimeError(
-        "Не найден BOT_TOKEN! Проверь файл .env."
-    )
+if not TOKEN: RuntimeError()
+ 
 
 # Файл для хранения пользователей
 USERS_FILE = "users.json"
